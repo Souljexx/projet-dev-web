@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CV Projet : Développement Front-end</title>
+		<meta charset="utf-8">
+		<meta name="author" lang="fr" content="Mathias Bensafi">
+		<meta name="viewport" content="width=device-width, initial-scale=0">
+		<meta name="description" content="Ceci est un CV résumant mon profil étudiant en informatique">
+		<meta name="keywords" content="Mathias, étudiant, informatique">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<main class="main-content">
+			<section id="left-section">
+				<div class="left-content">
+					<div class="profile">
+						<figure>
+							<img src="img/photo-profil.jpg" alt="Photo de profil CV">
+						</figure>
+					</div>
+					<div class="info">
+						<h3 class="profil-info">Profil</h3>
+						<p class="para">Étudiant de 2ème année, curieux, toujours à la recherche de détails
+						importants. J'apprécie les relations simples et les actions claires. Positif et souriant,
+						je m'adapte à toute équipe et rythme de travail. Ouvert, j'apprécie l'environnement dans 
+						lequel j'évolue ainsi que les tâches qui me sont accordées.<br></p>
+					</div>
+					<div class="languages-section">
+						<h3 class="main-title">Langues</h3>
+						<ul>
+							<li>
+								<p class="language1">Français</p>
+								<div class="progress-bar">
+									<div class="progress fr-progress"></div>
+								</div>
+							</li>
+							<li>
+								<p class="language1">Anglais</p>
+								<div class="progress-bar">
+									<div class="progress en-progress"></div>
+								</div>
+							</li>
+							<li>
+								<p class="language1">Néerlandais</p>
+								<div class="progress-bar">
+									<div class="progress nd-progress"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="contact-info">
+						<h3 class="main-title">Contact</h3>
+						<ul>
+							<li>
+								<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+								<span class="text">+32 470 60 14 505</span>
+							</li>
+							<li>
+								<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+								<span class="text">mathias.bensafi@example.com</span>
+							</li>
+									
+							<li>
+								<span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+								<span class="text">Mons, Belgique</span>
+							</li>
+						</ul>
+					</div>
+					<div class="social-network">
+						<h3 class="main-title">Suivez-moi</h3>
+						<ul class="social">
+							<li>
+								<a href="https://be.linkedin.com/in/mathias-bensafi-645805177?original_referer=https%3A%2F%2Fwww.google.com%2F" id="linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<a href="https://github.com/Souljexx" id="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+								<a href="https://www.facebook.com/" id="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+						<div class="cv-pdf">
+							<a href="pdf/cv-mathias-bensafi.pdf" download class="cv-btn" target="_blank">Télécharger le CV</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section id="right-section">
+				<div class="right-content">
+					<div>
+						<h1 class="name">Mathias Bensafi</h1>
+						<p class="status">Étudiant en informatique</p>
+					</div>
+				<section id="career-section">
+					<div class="timeline">
+						<div class="right-t1-content">
+							<h2 class="right-title">Formation</h2>
+							
+							<h5 class="t1-title">2018 - 2020</h5>
+							<p class="career-para">Diplômé de l'INSTITUT TECHNIQUE Saint-Vincent, option Informatique - Soignies</p>
+							
+							<h5 class="t1-title">2020 - présent</h5>
+							<p class="career-para">HEH - Bachelier en informatique et systèmes finalité réseaux et télécommunications - Mons</p>
+							
+							<h2 class="right-title">Expérience</h2>
+							<p class="career-para">Stage d'initiation aux réseaux Technofutur TIC - Charleroi</p>
+							
+							<h2 class="right-title">Compétences</h2>
+								<div class="skills-content">
+									<div class="direction">
+										<div class="btn-nav left" onclick="changeSlide('previous')"><</div>
+									<div class="slider">
+										<img src="img/html.png" alt="Compétence HTML" class="active">
+										<img src="img/css.png" alt="Compétence CSS" class="">
+										<img src="img/javascript.png" alt="Compétence javascript" class="">
+										<img src="img/java.png" alt="Compétence java" class="">
+										<img src="img/python.png" alt="Compétence python" class="">
+									</div>
+									<div class="btn-nav right" onclick="changeSlide('next')">></div>
+									</div>
+								</div>
+							<h2 class="right-title">Centres d'intérêts</h2>
+							<ul>
+								<li class="interests-para">Échecs: passionné, joueur de club, participe régulièrement à des tournois</li>
+								<li class="interests-para">Gymnastique artistique : pratiqué pendant 1 an</li>
+								<li class="interests-para">Street workout</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				</div>
+			</section>
+		</main>
+		<div id="lightbox">
+			<div id="image"></div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
